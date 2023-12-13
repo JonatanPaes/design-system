@@ -11,5 +11,6 @@
 </p>
 
 # Tecnologias
+- [React](https://react.dev/)
 - [TypeScript](https://github.com/microsoft/TypeScript)
-- [Tsup](https://tsup.egoist.dev/)
+- [TSUP](https://tsup.egoist.dev/)
