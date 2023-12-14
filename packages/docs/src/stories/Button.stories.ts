@@ -1,50 +1,19 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { StoryObj, Meta } from '@storybook/react'
 
-import { Button } from './Button'
+import { Button, ButtonProps } from '@ignite-ui/react'
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
-  title: 'Example/Button',
+export default {
+  title: 'Button',
   component: Button,
-  parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
-  },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-} satisfies Meta<typeof Button>
-
-export default meta
-type Story = StoryObj<typeof meta>
-
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    children: 'Enviar',
   },
-}
+} as Meta<ButtonProps>
 
-export const Secondary: Story = {
-  args: {
-    label: 'Button',
-  },
-}
+export const Primary: StoryObj<ButtonProps> = {}
 
-export const Large: Story = {
+export const Big: StoryObj<ButtonProps> = {
   args: {
-    size: 'large',
-    label: 'Button',
-  },
-}
-
-export const Small: Story = {
-  args: {
-    size: 'small',
-    label: 'Button',
+    size: 'big',
   },
 }
