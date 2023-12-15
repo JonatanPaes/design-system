@@ -16,3 +16,4 @@
 - [TSUP](https://tsup.egoist.dev/)
 - [Stiches](https://stitches.dev/)
 - [Storybook](https://storybook.js.org/)
+- [Vite](https://vitejs.dev/)
