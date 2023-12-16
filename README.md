@@ -19,3 +19,5 @@
 - [Vite](https://vitejs.dev/)
 - [Polished](https://polished.js.org/)
 - [Turbo Repo](https://turbo.build/repo)
+- [Radix](https://www.radix-ui.com/)
+- [Phosphor Icons](https://phosphoricons.com/)
