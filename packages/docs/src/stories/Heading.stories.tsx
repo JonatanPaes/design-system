@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Heading, HeadingProps } from '@ignite-ui/react/src/components/Heading'
+import { Heading, HeadingProps } from '@ignite-ui/react'
 
 const meta: Meta<HeadingProps> = {
   title: 'Typography/Heading',
   component: Heading,
-  tags: ['autodocs'],
   args: {
     children: 'Custom title',
   },
