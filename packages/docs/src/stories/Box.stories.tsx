@@ -8,6 +8,13 @@ const meta: Meta<BoxProps> = {
   args: {
     children: <Text>Testando o elemento Box</Text>,
   },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 }
 
 export default meta

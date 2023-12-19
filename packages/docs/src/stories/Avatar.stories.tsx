@@ -9,6 +9,13 @@ const meta: Meta<AvatarProps> = {
     src: 'https://github.com/JonatanPaes.png',
     alt: 'Jonatán Paes',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 }
 
 export default meta
