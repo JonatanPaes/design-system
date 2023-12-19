@@ -9,7 +9,8 @@
     "build": "storybook build",
     "lint": "eslint src/**/*.ts* --fix",
     "preview": "vite preview",
-    "dev": "storybook dev -p 6006"
+    "dev": "storybook dev -p 6006",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "@ignite-ui/eslint-config": "*",
@@ -30,6 +31,7 @@
     "@storybook/blocks": "^7.6.5",
     "@storybook/react": "^7.6.5",
     "@storybook/react-vite": "^7.6.5",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^7.6.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
