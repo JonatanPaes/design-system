@@ -32,5 +32,12 @@ const config: StorybookConfig = {
     skipBabel: true,
     check: false,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/design-system'
+    }
+
+    return config
+  }
 };
 export default config;
