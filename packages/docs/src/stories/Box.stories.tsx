@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
 
-import { Box, BoxProps, Text } from '@ignite-ui/react'
+import { Box, BoxProps, Text } from '@jonatanpaes-ui/react'
 
 const meta: Meta<BoxProps> = {
   title: 'Surfaces/Box',

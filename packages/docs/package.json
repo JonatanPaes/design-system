@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@jonatanpaes-ui/docs",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
@@ -13,10 +13,10 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@jonatanpaes-ui/eslint-config": "*",
+    "@jonatanpaes-ui/react": "*",
+    "@jonatanpaes-ui/tokens": "*",
+    "@jonatanpaes-ui/ts-config": "*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
