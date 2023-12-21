@@ -8,6 +8,7 @@
 
  <p align="center">
   <a href="#como-executar">ℹ️ Como Executar?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#design-system">💻 Design System</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">🚀 Tecnologias</a>&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -36,8 +37,14 @@ Para executar o projeto
 ```sh
 npm run dev
 ```
+# Design System
+
+<p align="center">
+  <img alt="Demonstration Design System" src="./preview/design-system.gif" width="100%" height="100%" />
+</p>
 
 # Tecnologias
+
 - [React](https://react.dev/)
 - [TypeScript](https://github.com/microsoft/TypeScript)
 - [TSUP](https://tsup.egoist.dev/)
