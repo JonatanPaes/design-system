@@ -1,5 +1,11 @@
 # @jonatanpaes-ui/react
 
+## 2.0.2
+
+### Patch Changes
+
+- Add new components Toast and Tooltip
+
 ## 2.0.1
 
 ### Patch Changes
