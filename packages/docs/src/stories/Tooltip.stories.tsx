@@ -7,8 +7,7 @@ const meta: Meta<TooltipProps> = {
   component: Tooltip,
   args: {
     children: <Text>What Day is Today ?</Text>,
-    content: '20 de Dezembro',
-    isAvailable: true,
+    content: '20 de Dezembro - Disponível',
   },
   argTypes: {
     children: {

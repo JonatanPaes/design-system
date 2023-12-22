@@ -4,15 +4,9 @@ import { TooltipArrow, TooltipContent } from './styles'
 
 export type TooltipProps = ComponentProps<typeof TooltipPrimitive.Root> & {
   content: string | ReactNode
-  isAvailable: boolean
 }
 
-export function Tooltip({
-  content,
-  isAvailable,
-  children,
-  ...props
-}: TooltipProps) {
+export function Tooltip({ content, children, ...props }: TooltipProps) {
   return (
     <TooltipPrimitive.Provider>
       <TooltipPrimitive.Root {...props}>
@@ -20,7 +14,7 @@ export function Tooltip({
         <TooltipPrimitive.Portal>
           <TooltipContent>
             <TooltipArrow />
-            {content} - {isAvailable ? 'Disponível' : 'Indisponível'}
+            {content}
           </TooltipContent>
         </TooltipPrimitive.Portal>
       </TooltipPrimitive.Root>
