@@ -7,12 +7,7 @@ const meta: Meta<ToastProps> = {
   component: Toast,
   args: {
     title: 'Agendamento realizado',
-    text: 'Quinta-feira, 21 de Dezembro às 12h',
-  },
-  argTypes: {
-    onClickClose: {
-      action: 'click',
-    },
+    description: 'Quinta-feira, 21 de Dezembro às 12h',
   },
 }
 

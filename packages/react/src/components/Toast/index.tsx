@@ -1,24 +1,32 @@
+import { ComponentProps } from 'react'
+import * as ToastPrimitive from '@radix-ui/react-toast'
 import { X } from 'phosphor-react'
-import { Heading } from '../Heading'
-import { CloseButton, ToastContainer } from './styles'
+import {
+  ToastClose,
+  ToastDescription,
+  ToastRoot,
+  ToastTitle,
+  ToastViewPort,
+} from './styles'
 
-export interface ToastProps {
+export type ToastProps = ComponentProps<typeof ToastRoot> & {
   title: string
-  text: string
-  onClickClose: () => void
+  description?: string
 }
 
-export function Toast({ title, text, onClickClose }: ToastProps) {
+export function Toast({ title, description, ...props }: ToastProps) {
   return (
-    <ToastContainer>
-      <div>
-        <Heading size="sm">{title}</Heading>
-        <CloseButton onClick={onClickClose}>
-          <X weight="bold" size={20} />
-        </CloseButton>
-      </div>
-      <span>{text}</span>
-    </ToastContainer>
+    <ToastPrimitive.Provider>
+      <ToastRoot {...props}>
+        <ToastTitle>{title}</ToastTitle>
+        {description && <ToastDescription>{description}</ToastDescription>}
+        <ToastClose>
+          <X weight="light" size={20} />
+        </ToastClose>
+      </ToastRoot>
+
+      <ToastViewPort />
+    </ToastPrimitive.Provider>
   )
 }
 
