@@ -1,0 +1,3 @@
+import{j as o}from"./jsx-runtime-2UOnWPoV.js";import{d as i,T as n,B as p}from"./index--BhmSWO4.js";import"./index-FaLGlFNx.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./extends-dGVwEr9R.js";import"./index-gMreU1aJ.js";const u={title:"Overlay/Tooltip",component:i,args:{children:o.jsx(n,{children:"What Day is Today ?"}),content:"20 de Dezembro - Disponível"},argTypes:{children:{control:{type:null}}},decorators:[a=>o.jsx(p,{css:{display:"flex"},children:a()})]},r={args:{}};var e,s,t;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(t=(s=r.parameters)==null?void 0:s.docs)==null?void 0:t.source}}};const T=["Primary"];export{r as Primary,T as __namedExportsOrder,u as default};

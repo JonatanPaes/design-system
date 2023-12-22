@@ -1,0 +1,1 @@
+import{t as r}from"./chunk-ZGA76URP-Uk8hDnuP.js";const e={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},docs:{theme:r.dark},backgrounds:{default:"dark"},darkMode:{dark:{...r.dark},current:"dark"}}};export{e as default};

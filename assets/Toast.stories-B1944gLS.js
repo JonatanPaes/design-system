@@ -1,0 +1,3 @@
+import{c as t}from"./index--BhmSWO4.js";import"./index-FaLGlFNx.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./extends-dGVwEr9R.js";import"./index-gMreU1aJ.js";import"./jsx-runtime-2UOnWPoV.js";const d={title:"Overlay/Toast",component:t,args:{title:"Agendamento realizado",description:"Quinta-feira, 21 de Dezembro às 12h"}},r={args:{}};var e,a,o;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(a=r.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};const l=["Primary"];export{r as Primary,l as __namedExportsOrder,d as default};
