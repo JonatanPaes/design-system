@@ -33,6 +33,6 @@ export const Primary: Story = {
 
 export const Full: Story = {
   args: {
-    currentStep: 3,
+    currentStep: 4,
   },
 }
