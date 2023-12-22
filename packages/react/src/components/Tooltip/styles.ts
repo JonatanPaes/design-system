@@ -1,27 +1,16 @@
-import { CaretDown } from 'phosphor-react'
+import * as Tooltip from '@radix-ui/react-tooltip'
 import { styled } from '../../styles'
 
-export const TooltipContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  width: 'fit-content',
-
-  div: {
-    background: '$gray900',
-    borderRadius: '$sm',
-    padding: '$3 $4',
-    color: '$gray100',
-    width: 'fit-content',
-
-    span: {
-      lineHeight: '$shorter',
-      fontFamily: '$tooltip',
-    },
-  },
+export const TooltipContent = styled(Tooltip.Content, {
+  padding: '$3 $4',
+  background: '$gray900',
+  color: '$gray100',
+  fontFamily: '$tooltip',
+  fontSize: '$sm',
+  borderRadius: '$xs',
+  fontWeight: '$medium',
 })
 
-export const CaretDownIcon = styled(CaretDown, {
-  marginTop: '-0.563rem',
-  color: '$gray900',
+export const TooltipArrow = styled(Tooltip.Arrow, {
+  fill: '$gray900',
 })

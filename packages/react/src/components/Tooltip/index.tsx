@@ -1,22 +1,30 @@
-import { Text } from '../Text'
-import { TooltipContainer, CaretDownIcon } from './styles'
+import * as TooltipPrimitive from '@radix-ui/react-tooltip'
+import { ComponentProps, ReactNode } from 'react'
+import { TooltipArrow, TooltipContent } from './styles'
 
-export interface TooltipProps {
-  date: string
+export type TooltipProps = ComponentProps<typeof TooltipPrimitive.Root> & {
+  content: string | ReactNode
   isAvailable: boolean
 }
 
-export function Tooltip({ date, isAvailable }: TooltipProps) {
+export function Tooltip({
+  content,
+  isAvailable,
+  children,
+  ...props
+}: TooltipProps) {
   return (
-    <TooltipContainer>
-      <div>
-        <Text as="span" size="sm">
-          {date} - {isAvailable ? 'Disponível' : 'Indisponível'}
-        </Text>
-      </div>
-
-      <CaretDownIcon size={24} weight="fill" />
-    </TooltipContainer>
+    <TooltipPrimitive.Provider>
+      <TooltipPrimitive.Root {...props}>
+        <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>
+        <TooltipPrimitive.Portal>
+          <TooltipContent>
+            <TooltipArrow />
+            {content} - {isAvailable ? 'Disponível' : 'Indisponível'}
+          </TooltipContent>
+        </TooltipPrimitive.Portal>
+      </TooltipPrimitive.Root>
+    </TooltipPrimitive.Provider>
   )
 }
 
